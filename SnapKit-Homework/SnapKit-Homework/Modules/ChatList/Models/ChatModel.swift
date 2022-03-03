@@ -27,3 +27,14 @@ struct ChatsModel {
         self.timePassed = timePassed
     }
 }
+
+struct DatesMessages {
+    var date: String?
+    var messages: [Message]?
+}
+
+struct Message {
+    var isFrom: Bool?
+    var messageText: String?
+    var time: String?
+}
