@@ -189,6 +189,13 @@ extension ChatListViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let controller = ChatViewController()
+        controller.config(id: chatsData[indexPath.row - 1].id ?? "",
+                          image: chatsData[indexPath.row - 1].image ?? UIImage(),
+                          name: chatsData[indexPath.row - 1].name ?? "")
+        navigationController?.pushViewController(controller, animated: true)
+
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 }
 
