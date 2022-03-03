@@ -9,20 +9,24 @@
 /* Begin PBXBuildFile section */
 		EA9C387727D0AB77003D01A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C387627D0AB77003D01A0 /* AppDelegate.swift */; };
 		EA9C387927D0AB77003D01A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C387827D0AB77003D01A0 /* SceneDelegate.swift */; };
-		EA9C387B27D0AB77003D01A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C387A27D0AB77003D01A0 /* ViewController.swift */; };
+		EA9C387B27D0AB77003D01A0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C387A27D0AB77003D01A0 /* ProfileViewController.swift */; };
 		EA9C388027D0AB79003D01A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA9C387F27D0AB79003D01A0 /* Assets.xcassets */; };
 		EA9C388327D0AB79003D01A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9C388127D0AB79003D01A0 /* LaunchScreen.storyboard */; };
 		EA9C388C27D0AC30003D01A0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EA9C388B27D0AC30003D01A0 /* SnapKit */; };
+		EA9C389627D0C907003D01A0 /* Habibi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA9C389527D0C907003D01A0 /* Habibi-Regular.ttf */; };
+		EA9C389927D0C97C003D01A0 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C389827D0C97C003D01A0 /* FontHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA9C387327D0AB77003D01A0 /* SnapKit-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SnapKit-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9C387627D0AB77003D01A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA9C387827D0AB77003D01A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA9C387A27D0AB77003D01A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA9C387A27D0AB77003D01A0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EA9C387F27D0AB79003D01A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA9C388227D0AB79003D01A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA9C388427D0AB79003D01A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA9C389527D0C907003D01A0 /* Habibi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Habibi-Regular.ttf"; sourceTree = "<group>"; };
+		EA9C389827D0C97C003D01A0 /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +91,7 @@
 		EA9C389127D0C0D3003D01A0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				EA9C387A27D0AB77003D01A0 /* ViewController.swift */,
+				EA9C389427D0C1CB003D01A0 /* Profile */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -95,6 +99,8 @@
 		EA9C389227D0C0E6003D01A0 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				EA9C389727D0C964003D01A0 /* FontHelper */,
+				EA9C389527D0C907003D01A0 /* Habibi-Regular.ttf */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -104,6 +110,22 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EA9C389427D0C1CB003D01A0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EA9C387A27D0AB77003D01A0 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EA9C389727D0C964003D01A0 /* FontHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EA9C389827D0C97C003D01A0 /* FontHelper.swift */,
+			);
+			path = FontHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +194,7 @@
 			files = (
 				EA9C388327D0AB79003D01A0 /* LaunchScreen.storyboard in Resources */,
 				EA9C388027D0AB79003D01A0 /* Assets.xcassets in Resources */,
+				EA9C389627D0C907003D01A0 /* Habibi-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,8 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA9C387B27D0AB77003D01A0 /* ViewController.swift in Sources */,
+				EA9C387B27D0AB77003D01A0 /* ProfileViewController.swift in Sources */,
 				EA9C387727D0AB77003D01A0 /* AppDelegate.swift in Sources */,
+				EA9C389927D0C97C003D01A0 /* FontHelper.swift in Sources */,
 				EA9C387927D0AB77003D01A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
