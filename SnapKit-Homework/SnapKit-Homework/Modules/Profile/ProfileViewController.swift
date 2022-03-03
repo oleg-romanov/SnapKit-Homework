@@ -139,6 +139,9 @@ class ProfileViewController: UIViewController {
 
     // MARK: - Actions
 
-    @objc private func navigateToMessages() {}
+    @objc private func navigateToMessages() {
+        let viewController = ChatListViewController()
+        navigationController?.pushViewController(viewController, animated: false)
+    }
 }
 

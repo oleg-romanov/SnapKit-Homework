@@ -15,6 +15,11 @@
 		EA9C388C27D0AC30003D01A0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EA9C388B27D0AC30003D01A0 /* SnapKit */; };
 		EA9C389627D0C907003D01A0 /* Habibi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA9C389527D0C907003D01A0 /* Habibi-Regular.ttf */; };
 		EA9C389927D0C97C003D01A0 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C389827D0C97C003D01A0 /* FontHelper.swift */; };
+		EA9C389C27D0D8CC003D01A0 /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C389B27D0D8CC003D01A0 /* ChatListViewController.swift */; };
+		EA9C389F27D0D9E2003D01A0 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C389E27D0D9E2003D01A0 /* ChatModel.swift */; };
+		EA9C38A227D0DF33003D01A0 /* PinnedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C38A127D0DF33003D01A0 /* PinnedTableViewCell.swift */; };
+		EA9C38A427D0DF42003D01A0 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C38A327D0DF42003D01A0 /* ChatTableViewCell.swift */; };
+		EA9C38A627D0E03A003D01A0 /* PinnedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C38A527D0E03A003D01A0 /* PinnedCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		EA9C388427D0AB79003D01A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA9C389527D0C907003D01A0 /* Habibi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Habibi-Regular.ttf"; sourceTree = "<group>"; };
 		EA9C389827D0C97C003D01A0 /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
+		EA9C389B27D0D8CC003D01A0 /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		EA9C389E27D0D9E2003D01A0 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		EA9C38A127D0DF33003D01A0 /* PinnedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedTableViewCell.swift; sourceTree = "<group>"; };
+		EA9C38A327D0DF42003D01A0 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		EA9C38A527D0E03A003D01A0 /* PinnedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				EA9C389427D0C1CB003D01A0 /* Profile */,
+				EA9C389A27D0D8A1003D01A0 /* ChatList */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -126,6 +137,34 @@
 				EA9C389827D0C97C003D01A0 /* FontHelper.swift */,
 			);
 			path = FontHelper;
+			sourceTree = "<group>";
+		};
+		EA9C389A27D0D8A1003D01A0 /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				EA9C389B27D0D8CC003D01A0 /* ChatListViewController.swift */,
+				EA9C38A027D0DF20003D01A0 /* Cells */,
+				EA9C389D27D0D9CE003D01A0 /* Models */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		EA9C389D27D0D9CE003D01A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA9C389E27D0D9E2003D01A0 /* ChatModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA9C38A027D0DF20003D01A0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EA9C38A127D0DF33003D01A0 /* PinnedTableViewCell.swift */,
+				EA9C38A327D0DF42003D01A0 /* ChatTableViewCell.swift */,
+				EA9C38A527D0E03A003D01A0 /* PinnedCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +248,11 @@
 				EA9C387727D0AB77003D01A0 /* AppDelegate.swift in Sources */,
 				EA9C389927D0C97C003D01A0 /* FontHelper.swift in Sources */,
 				EA9C387927D0AB77003D01A0 /* SceneDelegate.swift in Sources */,
+				EA9C38A227D0DF33003D01A0 /* PinnedTableViewCell.swift in Sources */,
+				EA9C38A427D0DF42003D01A0 /* ChatTableViewCell.swift in Sources */,
+				EA9C38A627D0E03A003D01A0 /* PinnedCollectionViewCell.swift in Sources */,
+				EA9C389C27D0D8CC003D01A0 /* ChatListViewController.swift in Sources */,
+				EA9C389F27D0D9E2003D01A0 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
